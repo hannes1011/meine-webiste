@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: red;
+    font-size: 3em;
+    animation: jump 0.5s infinite alternate; /* Animation hinzugefügt */
+}
+
+@keyframes jump {
+    from {
+        transform: translateY(0); /* Startposition */
+    }
+    to {
+        transform: translateY(-20px); /* Endposition */
+    }
+}
